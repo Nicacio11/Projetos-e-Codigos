@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Alert Bootstrap</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Sistema <small>Bootstrap</small></h1>
+
+			<hr/>
+			<!--
+			
+			-->
+			<div class="alert alert-success fade in">
+				<!--Para deixar o alerta com o x para fechar coloca uma class com close
+				o data-dismiss vai dizer o q vai ser fechado
+				aria-label com close
+				e o &times; é uma codifiação unicode que vai fazer ao passaro mouse o x ficar como se estivesse selecionado
+				o fade in faz com que ao ser fechado saia aos poucos
+				-->
+				<a href="#" class="close" data-dismiss="alert" aria-lable="close">&times;</a>
+				Senha criada com sucesso!!
+			</div>
+			<div class="alert alert-danger">
+				Email e/ou senha estão incorretos
+			</div>
+			<div class="alert alert-warning">
+				Manutenção
+			</div>
+			<div class="alert alert-info">
+				Olá tudo bem?
+			</div>
+		</div>
+
+	</body>
+</html>

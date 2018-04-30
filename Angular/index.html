@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AngularJS</title>
+	<script type="text/javascript" src="angular.min.js" ></script>
+	
+</head>
+<body>
+	
+	<div ng-app="">
+		<!--
+			Armazenando o valor em uma variavel 
+		-->
+		Meu nome :<input type="text" name="" ng-model="nome">
+		<!--
+			Todo nome armazenado no model sera passado para o bind 
+		-->
+		<p ng-bind="nome"></p>
+
+	</div>
+</body>
+</html>

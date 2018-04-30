@@ -1,0 +1,16 @@
+html, body{
+ height:100%;
+ margin: 0;
+ padding: 0;
+}
+.colunaEsquerda{
+ width: 25%;
+ height:auto;
+ min-height:100%;
+ background:blue;
+ float: left;
+}
+.conteudoPrincipal{
+float: left;
+background: red;
+width: 75%;

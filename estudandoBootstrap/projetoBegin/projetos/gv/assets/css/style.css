@@ -1,0 +1,273 @@
+html,body{
+  margin:0;
+  font-family: 'Lato', sans-serif;  
+  min-width: 659px;
+}
+
+.header{
+	height: 658px;
+	font-family: Comic;
+	background-image: url("https://uploaddeimagens.com.br/images/001/014/624/original/fundo.jpeg?1501217525");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-attachment: fixed;  
+	top: 0;
+	width: 100%
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+  /*text-transform: uppercase;*/
+  text-shadow:1px 2px black;
+}
+
+.separator-white {
+  border-top: solid 3px #fff;
+  color: #fff;
+  
+}
+.topo{
+	height:50px;
+	background-color: #f8f8f8;
+	position:fixed;
+	width: 100%;
+	z-index: 1;
+}
+
+.topoint{
+	width: 100%;
+	max-width: 1040px;
+	height: 50px;
+	
+	margin:auto;
+}
+.topoleft{
+	float:left;
+	width: 50%;
+	height: 50px;
+}
+.toporight{
+	float:right;
+	width:50%;
+	height: 50px;
+}
+.topoleft ul{
+	margin:0;
+	padding: 0;
+	list-style: none;
+}
+.topoleft li{
+	float:left;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.topoleft li a{
+	text-decoration: none;
+	color:#7787a8;
+}
+.topoleft li .ativo {
+	color:blue;
+}
+
+@keyframes cor{
+		0%{
+		color: green;
+		}
+		25%{
+			color:darkgreen;
+		}
+		50%{
+			color: black;
+		}
+		75%{color: green;
+		}
+		100%{color: darkgreen;
+	}
+}
+.topo li a:hover{
+	border-top:3px solid green;
+	border-bottom:3px solid green;
+	/*color:#0ecc00;*/ 
+	animation-name:cor;
+	animation-duration:4s;
+	animation-delay:2s;
+	animation-iteration-count:infinite;
+}
+
+.toporight{
+	float:right;
+	width: 40%;
+	height: 48px;
+	text-align:right;
+	line-height: 50px;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.toporight ul{
+	margin:0;
+	padding: 0;
+}
+.toporight li{
+	float:left;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 8px;
+	margin-right: 8px;
+	list-style: none;
+}
+
+.toporight li a{
+	text-decoration: none;
+	color:#7787a8;
+}
+
+.titulo{
+	margin: auto;
+	position: absolute;
+	width: 100%;
+	color: white;
+  	text-align: center;
+  	font-size: 30px;
+  	margin-top: 165px;
+  	opacity:0.65;
+  	display: block;
+
+}
+.separador{
+  border-top: solid 3px #fff;
+  color: #fff;
+  width: 100px;
+  
+}
+
+.quem-somos{
+
+	width: 100%;
+	height: 600px;/*242*/
+	margin: auto;
+	margin-top: 100px;
+	text-align: center;
+	color: white;
+	background-color:#28282b; 
+	padding-top: 20px;
+	margin-bottom: 200px;
+}
+
+.logo{
+	width: 200px;
+	height: 100px;
+}
+.quem-somos-int{
+	width: 100%;
+        
+}
+
+.quem-somos-left{
+	width: 50%;
+	text-align: center;	
+	float: left;
+	font-family: 'Merriweather', serif;
+    text-shadow:1px 2px black;
+}
+.vitor{
+   width:25%;
+   height:150px;
+}
+.joka{
+   width:25%;
+   height:150px;
+}
+.quem-somos-right{
+	width: 50%;
+	text-align: center;
+	float: right;
+    font-family: 'Merriweather', serif;
+    text-shadow:1px 2px black;
+}
+
+
+
+.servicos{
+	margin-top: 40px;
+	width: 100%;
+	height: 500px;
+	background-image:url("https://uploaddeimagens.com.br/images/001/014/627/original/computador.jpg?1501217708");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 30px;
+}
+
+.servicosright{
+	width: 50%;
+	float: right;
+	padding-left: 5px;
+	padding-top: 100px;
+	color: white;
+	border-left: 2px solid white;
+}
+
+.contato{
+	margin-top: 100px;
+	height: 300px;
+	width: 100%;
+	background-color: #28282b;
+	text-align: center;
+	padding-top: 20px;
+	color: white;
+}
+.contatos{
+	width: 100%;
+	margin-top: 80px;
+
+}
+.contato {
+  font-family: 'Merriweather', serif;
+  text-shadow:1px 2px black;
+}
+@media only screen and (max-width: 850px) {
+	.toporight{
+		width: 100%;
+		font-size: 14px;
+	}
+	.topoleft{
+		width: 100%;
+		font-size: 16px;
+	}
+	.topo{
+		height: 100px;
+	}
+	.quem-somos{
+		width: 100%;
+		height: 830px;
+	}
+	.quem-somos-left{
+		width: 100%;
+		font-size: 10px;
+		margin-bottom: 30px;
+	}
+	.quem-somos-right{
+		width: 100%;
+		font-size: 10px;
+	}
+	.servicosright{
+		width: 95%;
+		font-size: 11px;
+		padding-left: 5px;
+	}
+	.contato{
+		font-size: 12px;
+		width: 100%;
+		background-color: #28282b;
+		color: white;
+		
+}
+
+}

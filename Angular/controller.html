@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AngularJS - Controller</title>
+	<script type="text/javascript" src="angular.min.js" ></script>
+	
+</head>
+<body>
+	
+	<div ng-app="meuApp" ng-controller="meuCtrl">
+		<!--
+			 Controller = Controlador
+			 definindo o controller com ng-controller
+		-->
+		<input type="text" name="" ng-model="meunome">
+
+	</div>
+	<script type="text/javascript">
+		//criando o modulo
+		var app = angular.module('meuApp', []);
+		
+		/*
+		*criando o controlador passando o nome do controlador e uma função onde tudo sera executado
+		*na função recebe um scope - é como a raiz de toda sua aplicação assim é possivel controlar todas variaveis
+		*/
+		app.controller('meuCtrl', function($scope){
+			$scope.meunome ="Testador";
+		})
+	</script>
+</body>
+</html>

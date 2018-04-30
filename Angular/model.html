@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AngularJS - Model</title>
+	<script type="text/javascript" src="angular.min.js" ></script>
+	
+</head>
+<body>
+	
+	<div ng-app="">
+		<!--
+			É uma via de mão dupla
+
+
+		-->
+		Meu nome :<input type="text" name="" ng-model="nome">
+		<!--
+			Todo nome armazenado no model sera passado para o bind ou qualquer outra coisa associada a o model
+		-->
+		<p ng-bind="nome"></p>
+		{{nome}}
+
+	</div>
+</body>
+</html>

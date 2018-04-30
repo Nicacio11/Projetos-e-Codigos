@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AngularJS - Select</title>
+	<script type="text/javascript" src="angular.min.js" ></script>
+	<meta charset="utf-8">
+</head>
+<body>
+	
+	<div ng-app="meuApp" ng-controller="meuCtrl">
+		<!--
+			 Filters = Filtros
+			  | uppercase - todos maiusculo
+			  | lowercase - todos minusculo
+			  | filter:'o' ou adicionando a variavel
+			  | filter:FiltrarPor
+			  | orderBy
+			 
+		-->
+		<input type="text" name="" ng-model="FiltrarPor">
+		<h1>Receita de bolo</h1>
+
+			<li ng-repeat="x in nomes | filter:FiltrarPor" >
+				{{x}}
+			</li>
+			<select ng-model="ordenarPor"">
+				<option ng-repeat="op  in opcoes">{{op}}</option>
+			</select>
+			<select ng-model="ordenarPor"" ng-options="x for x in opcoes">
+			</select>
+			<select ng-model="ordenarPor"" ng-options="x.nome for x in opcoes2">
+			</select>
+		</ul>
+		<br/>
+
+
+		<table border="0" width="500">
+			<tr >
+				<th align="left" ng-repeat="x in opcoes ">{{x | uppercase}}</th>
+			</tr>
+			<tr ng-repeat="x in nomes2 |orderBy:ordenarPor">
+				<td>{{x.nome}}</td>
+				<td>{{x.pais}}</td>
+			</tr>
+		</table>
+	</div>
+	<script type="text/javascript">
+		//criando o modulo
+		var app = angular.module('meuApp', []);
+		
+		/*
+		*criando o controlador passando o nome do controlador e uma função onde tudo sera executado
+		*na função recebe um scope - é como a raiz de toda sua aplicação assim é possivel controlar todas variaveis
+		*/
+		app.controller('meuCtrl', function($scope){
+			
+			$scope.opcoes = ["nome", "pais"];
+			$scope.opcoes2 = [
+				{nome:'Nome do sujeito', valor:'nome'},
+				{nome:'Pais de origem', valor:'pais'}
+			];
+
+			$scope.nomes2 = [{'nome':'Vitor', 'pais':'Brasil'}
+			,{'nome':'Fulano', 'pais':'Italia'}
+			,{'nome':'Cicrano', 'pais':'França'}
+			,{'nome':'Juliana', 'pais':'Italia'}
+			,{'nome':'Leandro', 'pais':'Jamaica'}
+			,{'nome':'Amanda', 'pais':'Cuba'}
+			,{'nome':'Matheus França', 'pais':'Cuba'}
+			];
+			$scope.FiltrarPor = '';
+			$scope.ordenarPor = 'pais';
+
+
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AngularJS - Repeat</title>
+	<script type="text/javascript" src="angular.min.js" ></script>
+	
+</head>
+<body>
+	
+	<div ng-app="meuApp" ng-controller="meuCtrl">
+		<!--
+			 Repeat = Repetidores
+			 é como o for ou foreach
+		-->
+		<h1>Receita de bolo</h1>
+		<ul>
+			<li ng-repeat="ing in ingredientes">{{ing}}</li>
+		</ul>
+		<ul>
+			<li ng-repeat="ing in ingredientes2">{{ing.nome}} contem {{ing.qt}}</li>
+		</ul>
+
+	</div>
+	<script type="text/javascript">
+		//criando o modulo
+		var app = angular.module('meuApp', []);
+		
+		/*
+		*criando o controlador passando o nome do controlador e uma função onde tudo sera executado
+		*na função recebe um scope - é como a raiz de toda sua aplicação assim é possivel controlar todas variaveis
+		*/
+		app.controller('meuCtrl', function($scope){
+			
+			$scope.ingredientes = ["farinha", "ovo", "chocolate"];
+			$scope.ingredientes2 = [{'nome':'Farinha', 'qt':'200g'}
+			,{'nome':'Ovo', 'qt':'3'}
+			,{'nome':'Chocolate', 'qt':'10'}];
+
+
+		})
+	</script>
+</body>
+</html>

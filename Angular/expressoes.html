@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AngularJS - Expressões</title>
+	<script type="text/javascript" src="angular.min.js" ></script>
+	
+</head>
+<body>
+	
+	<div ng-app="" ng-init="dolar=3.15;real=0" style="background-color: {{cor}}">
+		<!--
+			Expressões
+			São processamentos que o angular irá fazer automaticamente sempre 
+			ng-model é como se fosse uma variavel
+			ng-bind  associa a variavel model
+			
+
+			{{expressão}}
+
+			ng-init inicia com a aplicação
+		-->
+
+
+		<p>{{ 5 + 5 }}</p>
+
+		Nome: <input type="text" name="" ng-model="nome"><br/>
+		Sobrenome: <input type="text" name="" ng-model="sobrenome"><br/>
+
+		-<p>{{nome + " " + sobrenome}}</p>
+
+		cor:<input type="text" name="" ng-model="cor"><br/>
+		<br/>
+
+		<input type="number" name="" ng-model="real"><br/><br/>
+
+		{{real}}  reais em dolares = {{dolar*real}}
+	</div>
+</body>
+</html>
