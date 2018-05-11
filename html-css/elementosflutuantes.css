@@ -1,0 +1,36 @@
+.texto{
+	margin: auto;
+	margin-top: 20px;
+	text-align: center;
+	background-color: #EEE;
+	color:#FF0000;
+	width: 300px;
+	height: 100px;
+	padding: 20px;
+	font-weight: bold;
+	font-family: verdana;
+	text-decoration:underline;
+}
+.texto-flutuante{
+	position:absolute;
+	top: 150px;
+	right: 500px;
+	background-color: #EEE;
+	color:#FF0000;
+	width: 300px;
+	height: 100px;
+}
+.classe{
+	margin-top: 20px;
+	text-align: center;
+	background-color: #EEE;
+	color:#FF0000;
+	width: 300px;
+	height: 100px;
+	padding: 20px;
+	font-weight: bold;
+	font-family: verdana;
+	text-decoration:underline;
+	display: block;
+
+}

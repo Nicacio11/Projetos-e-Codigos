@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Elementos flutuantes e elementos inline, block e inline-block</title>
+		<link rel="stylesheet" type="text/css" href="elementosflutuantes.css">
+	</head>
+
+	<body>
+		<!--Elementos Flutuantes-->
+		<!--
+			Basicamente são elementos que aapesar da estrutura do site vão ficar por cima 
+			position:absolute;
+				precisa definir a que distancia vai ficar do top left bottom right etc
+				um grande exemplo são os popups de anuncio que aparecem na tela 
+			position:fixed;
+				Fica fixo no local mesmo se mover o site(fixo na posição )
+				grande exemplo são headers com opções
+				chat que fica do lado direito
+				mudando sua posição também com top left bottom right
+		-->
+		<!--Display-->
+		<!--
+			Basicamente vai definir como o objeto vai aparecer ou se vai aparecer.
+				none - não vai aparecer
+				block - é a forma padrão de se mostrar que será mostrada em blocos
+				inline : é como se transformasse a div em uma span - se adapta a propria linha - altura e largura não funcionam
+				inline-block : será como inline porem em forma de bloco - mantem altura largura porem como o span 
+
+		-->
+		<div class="texto">
+			Isto é uma div..
+		</div>
+
+		<div class="texto-flutuante">
+			Isto é uma div flutuante..
+		</div>
+
+		<div class="classe">
+			Este é um texto comum..
+		</div>
+		<span>Teste</span>
+		<span>Teste</span>
+	</body>
+</html>
