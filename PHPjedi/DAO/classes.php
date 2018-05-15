@@ -47,7 +47,7 @@
         $sql = $this->db->prepare($sql);
         $sql->execute($valores);
         if($sql->rowCount() > 0){
-          foreach $sql-fetchAll() as $item){
+          foreach ($sql->fetchAll() as $item){
             $usuarios[] = new Usuario($item);
           }
         }

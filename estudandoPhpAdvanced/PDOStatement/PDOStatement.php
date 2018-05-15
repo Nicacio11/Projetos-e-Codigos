@@ -4,7 +4,7 @@
 
 		public function __function(){
 			try {
-					
+
 					$this->db = new PDO("mysql:dbname=blogn;host=127.0.0.1","root","");
 
 			} catch (PDOException $e) {
