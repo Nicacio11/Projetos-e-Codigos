@@ -8,7 +8,7 @@
 
     public function __construct(){
     }
-    public function __construct($array){
+    /*public function __construct($array){
       $this->id = (isset($array['id']))?$array['id']:'';
       $this->nome = (isset($array['nome']))?$array['nome']:'';
       $this->marca = (isset($array['marca']))?$array['marca']:'';
@@ -16,7 +16,7 @@
     public function __construct($nome, $marca){
       $this->nome = $nome;
       $this->marca = $marca;
-    }
+    }*/
 
     public function setNome($nome){
        $this->nome = $nome;
