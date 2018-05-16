@@ -17,7 +17,6 @@
       }
 
       public function loadInTemplate($viewName, $viewData = array()){
-        print_r($viewData);
         //faz com que cada key e valor do array seja transformado em variavel e valor
         extract($viewData);
         require 'views/'.$viewName.'.php';

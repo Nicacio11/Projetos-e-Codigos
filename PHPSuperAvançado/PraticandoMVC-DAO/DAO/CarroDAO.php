@@ -19,7 +19,11 @@
       if($sql->rowCount()>0){
 
         foreach($sql->fetchAll() as $item){
-          $array[] = new Carro($item);
+          $carro = new Carro();
+          $carro->setNome($item['nome']);
+          $carro->setId($item['id']);
+          $carro->setMarca($item['marca']);
+          $array[] = $carro;
         }
         return $array;
       }

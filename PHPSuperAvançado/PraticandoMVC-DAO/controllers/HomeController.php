@@ -18,10 +18,11 @@
       $carro = new Carro();
       $carro->setNome($nome);
       $carro->setMarca($marca);
-      echo $carro->getNome();
-      echo $carro->getMarca();
+
       $carroDao = new CarroDAO();
       $carroDao->set($carro);
+
+
     }
   }
 

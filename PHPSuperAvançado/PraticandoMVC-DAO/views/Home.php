@@ -7,8 +7,12 @@
 </form>
 <?php
   echo "<br/>home<br/>";
-  foreach ($carros as $carro) {
-    echo $carro->getNome()." ".$carro->getMarca();
+  //echo $carros->nome;
+  print_r($carros);
+  for($i =0 ; $i<count($carros); $i++){
+    $teste = (object) $carros[$i];
+    echo '<br/>nome: '.$teste->getNome();
+    echo '<br/>marca: '.$teste->getMarca();
   }
 
 

@@ -4,7 +4,12 @@
 
 
   session_start();
-
+  require 'environment.php';
+  if(ENVIRONMENT=='development'){
+    define("BASE_URL", "http://localhost/Projetos/PHPSuperAvançado/PraticandoMVC-DAO/");
+  }else{
+    define("BASE_URL", "http://localhost/Projetos/PHPSuperAvançado/PraticandoMVC-DAO/");
+  }
   //o config.php é onde terão as configurações do banco de dados -com o dao é desnecessario
   //require 'config.php';
 

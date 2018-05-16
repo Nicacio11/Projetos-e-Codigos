@@ -6,8 +6,6 @@ class NotFoundController extends Controller {
       $data = array();
       $this->loadView('404', $data);
     }
-
-
 }
 
-?>
+?> 
