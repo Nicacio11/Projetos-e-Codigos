@@ -7,7 +7,9 @@
 </form>
 <?php
   echo "<br/>home<br/>";
-
+  foreach ($carros as $carro) {
+    echo $carro->getNome()." ".$carro->getMarca();
+  }
 
 
 ?>

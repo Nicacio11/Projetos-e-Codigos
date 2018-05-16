@@ -7,20 +7,17 @@
 
       $carroDao = new CarroDAO();
       $carros = $carroDao->get();
-
+      $data['carros'] = $carros;
       $this->loadTemplate('Home', $data);
     }
 
     public function cadastrar(){
-      $nome;
-      $marca;
-      if(isset($_POST['nome'])&& !empty($_POST['nome'])){
-        $nome = addslashes($_POST['nome']);
-      }
-      if(isset($_POST['marca'])&& !empty($_POST['marca'])){
-        $marca = addslashes($_POST['marca']);
-      }
-      $carro = new Carro($nome, $marca);
+      $nome = (isset($_POST['nome']))?addslashes($_POST['nome']):'';
+      $marca = (isset($_POST['marca']))?addslashes($_POST['marca']):'';
+
+      $carro = new Carro();
+      $carro->setNome($nome);
+      $carro->setMarca($marca);
       echo $carro->getNome();
       echo $carro->getMarca();
       $carroDao = new CarroDAO();

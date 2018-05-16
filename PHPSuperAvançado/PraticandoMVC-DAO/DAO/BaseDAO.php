@@ -17,7 +17,7 @@
         $config['dbuser']= 'root';
         $config['dbpass']= 'root';
       }*/
-      define("BASE_URL", "http://localhost/Projetos-e-Codigos/PHPSuperAvançado/PraticandoMVC-DAO/");
+      define("BASE_URL", "http://localhost/Projetos/PHPSuperAvançado/PraticandoMVC-DAO/");
       try{
         //conexão com o banco de dados
         $this->db = new PDO("mysql:dbname=estoque;host=localhost", "root", "");
