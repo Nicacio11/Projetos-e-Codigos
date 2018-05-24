@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carousel</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+
+</head>
+<body>
+	<div class="container">
+	    <div id="slideshow" class="slide carousel" data-interval="4000" data-ride="carousel">
+
+	    	<!--indicadores-->
+	    	<ol class="carousel-indicators">
+	    		<li data-target="#slideshow" data-slide-to="0" class="active"></li>
+	    		<li data-target="#slideshow" data-slide-to="1"></li>
+	    		<li data-target="#slideshow" data-slide-to="2"></li>	    		
+	    	</ol>
+
+	    	<!--div com todos os itens internos do carousel-->
+	        <div class="carousel-inner">
+	        	<div class="carousel-item active">
+	        		<img src="teste.jpg" class="w-100"/>
+	        	</div>
+	        	<div class="carousel-item">
+	        		<img src="teste2.jpg" class="w-100" />
+	        	</div>
+	        	<div class="carousel-item">
+	        		<img src="teste.jpg" class="w-100" />
+	        	</div>
+	        </div>
+
+	        <!--botoes de anterior ou proximo-->
+	        <a class="carousel-control-prev" href="#slideshow" data-slide="prev">
+	        	<span class="carousel-control-prev-icon"></span>
+	        </a>
+	        <a class="carousel-control-next" href="#slideshow" data-slide="next">
+	        	<span class="carousel-control-next-icon"></span>
+	        </a>
+	    </div>
+    </div>
+
+
+
+     <script type="text/javascript" src="jquery.min.js"></script>
+	 <script type="text/javascript" src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
