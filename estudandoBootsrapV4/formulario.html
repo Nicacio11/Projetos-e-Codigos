@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Imagem</title>
+	<title>Formulario</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 
@@ -10,10 +10,49 @@
 	<div class="container">
 		<form method="post">
 			<div class="form-group">
-				
+				<label for="email">E-mail:</label>
+				<input type="email" class="form-control form-control-lg" name="email" id="email" autofocus="" placeholder="E-mail" readonly>
+				<label for="senha">Password:</label>
+				<input type="password" class="form-control form-control-sm" name="senha" id="senha" placeholder="Senha"> <br/>
+				<input type="email" class="form-control-plaintext" name="email" id="email" autofocus="" placeholder="E-mail" ><br/>
+				<input type="submit" name="" value="Entrar" class="btn btn-danger">
+			</div>
+		</form><br/><br/><br/>
+		<hr/>
+		<form method="post" class="form-inline">
+			<div class="form-group">
+				<label for="email">E-mail:</label>
+				<input type="email" class="form-control form-control-lg" name="email" id="email" autofocus="" placeholder="E-mail" readonly>
+				<label for="senha">Password:</label>
+				<input type="password" class="form-control form-control-sm" name="senha" id="senha" placeholder="Senha"> <br/>
+				<input type="email" class="form-control-plaintext" name="email" id="email" autofocus="" placeholder="E-mail" ><br/>
+				<input type="submit" name="" value="Entrar" class="btn btn-danger">
 			</div>
 		</form>
-
+		<br/><br/><br/>
+		<hr/>
+		<form method="post" >
+			<div class="form-row">
+				<div class="col">
+					<label for="email">E-mail:</label>
+					<input type="email" class="form-control" name="email" id="email" autofocus="" placeholder="E-mail" readonly>
+				</div>
+				<div class="col">
+					<label for="senha">Password:</label>
+					<input type="password" class="form-control" name="senha" id="senha" placeholder="Senha"> <br/>
+				</div>
+				
+				
+			</div>
+			<div class="form-row">
+				<div class="col">
+					<div class="form-group">
+						<input type="submit" name="" value="Entrar" class="btn btn-danger">
+					</div>
+					
+				</div>
+			</div>
+		</form>
 	</div>
 
 
