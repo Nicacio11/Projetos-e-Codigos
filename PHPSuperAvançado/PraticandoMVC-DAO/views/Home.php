@@ -10,7 +10,7 @@
   //echo $carros->nome;
   print_r($carros);
   for($i =0 ; $i<count($carros); $i++){
-    $teste = (object) $carros[$i];
+    $teste = $carros[$i];
     echo '<br/>nome: '.$teste->getNome();
     echo '<br/>marca: '.$teste->getMarca();
   }
