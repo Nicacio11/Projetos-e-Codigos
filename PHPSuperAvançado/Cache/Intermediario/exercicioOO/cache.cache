@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Pagina teste</title>
+    <style>
+      .brincandoCss{
+        width:300px;
+        margin:auto;
+        background-color:#433CCC;
+        padding:20px; border-radius:5px;
+        border:1px solid #533CCC;
+        transition:all 1s linear;
+      }
+      .brincandoCss:hover{
+        width:400px;
+        background-color:#633CCC;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="brincandoCss" style="">
+      <h1> Este é o cabeçalho 504</h1>
+
+      <form method="post">
+        <input type="text" placeholder="E-mail"><br/><br/>
+
+        <input type="Password" placeholder="Senha"><br/><br/>
+
+        <input type="submit" value="Entrar"><br/><br/>
+
+
+      </form>
+    </div>
+  </body>
+
+</html>
