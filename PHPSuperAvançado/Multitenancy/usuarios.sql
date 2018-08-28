@@ -1,7 +1,0 @@
-CREATE DATABASE saas;
-USE saas;
-CREATE TABLE usuarios(
-  id INT PRIMARY KEY AUTO_INCREMENT,
-  dominio VARCHAR,
-  nome VARCHAR
-);

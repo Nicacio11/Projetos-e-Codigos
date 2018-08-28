@@ -1,7 +1,7 @@
 <?php
 
 	//arquivos independente se é post ou get vai ser pega atraves de $_FILES['']
-	
+
 	//esse arquivo é armazenado em uma pasta temporariamente no servidor então é passado o caminho de onde está
 	$arquivo = $_FILES['arquivo'];
 
@@ -16,5 +16,5 @@
 		move_uploaded_file($arquivo['tmp_name'], "SistemaDeLogin/".$nomedoarquivo);
 		echo "Arquivo enviado com sucesso"/
 	}
-	
+
 ?>
