@@ -28,6 +28,6 @@ $p = 'pagina'
     ob_end_clean();
 
     file_put_contents('cache.cache', $html);
-    echo $html
+    echo $html;
   }
 ?>
